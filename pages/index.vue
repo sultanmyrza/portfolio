@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        portfolio
+        portfolio (add yandex metrica)
       </h1>
       <h2 class="subtitle">
         My praiseworthy Nuxt.js project

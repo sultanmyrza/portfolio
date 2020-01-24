@@ -3,7 +3,7 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/<repository-name>/'
+          base: '/portfolio/'
         }
       }
     : {}
@@ -53,7 +53,17 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: '57173872',
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      }
+    ]
   ],
   /*
    ** Axios module configuration
@@ -69,5 +79,10 @@ export default {
      */
     extend(config, ctx) {}
   },
-  ...routerBase
+  // for github pages to serve static files
+  ...routerBase,
+  // for testing yandex metrica session replay locally
+  server: {
+    host: '0.0.0.0' // default: localhost
+  }
 }
