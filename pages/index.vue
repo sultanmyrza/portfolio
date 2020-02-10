@@ -9,15 +9,15 @@
         My praiseworthy Nuxt.js project
       </h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
+        <nuxt-link to="/skills" class="button--grey">
+          Skills
+        </nuxt-link>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/sultanmyrza/portfolio"
           target="_blank"
           class="button--grey"
         >
-          GitHub
+          This project source code (GitHub)
         </a>
       </div>
     </div>

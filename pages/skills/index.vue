@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>Skills</h1>
+    <h1>Skills (beta)</h1>
 
     <CheckList :items="responsibilities" header="Responsibilities" />
 
     <CheckList :items="skillsPreferred" header="Qualifications/Skills" />
 
-    <check-list
+    <CheckList
       :items="skillsOptional"
       header="Preferred Skills and Qualifications"
     />
